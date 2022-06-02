@@ -27,7 +27,7 @@
     nav{
       width: 100%;
       overflow: hidden;
-      height: 70px;
+      height: 90px;
       line-height: 70px;
       background: rgb(117, 70, 70);
       box-shadow: 0 2px 20px rgba(0,0,0,0.5);
@@ -42,14 +42,15 @@
   
     nav li{
       float: left;
-      width: 130px;
+      width: 150px;
       height: 70px;
       list-style: none;
       text-transform: uppercase;
       display: block;
-      line-height: 70px;
+      line-height: 90px;
       text-align: center;
       transition: color .5s;
+      ;
     }
     
     nav a{
@@ -69,10 +70,12 @@
     
 
     .logo{
-      width: 200px;
+      font-size: medium;  
+      width: 340px;
       float: left;
       position:fixed;
-      top: -12px;
+      top: -8px;
+      left: 50px;
       
     }
 
