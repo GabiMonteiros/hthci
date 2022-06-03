@@ -4,25 +4,42 @@
 
  <%- include('./partials/nav') %>
 <body>
-    <div class="aboutWrap">
+    <div class="contactWrap">
 
-        <div class="aboutBox">
+        <div class="contactBox">
             <h1>Contact Home Tutors and Health Charity Initiative</h1>
             <p>Thank you for your interest in Home Tutors and Health Charity Initiative Education. 
             We would like to hear from you. We are happy to answer any questions you may have.
             <br> 
             Please fill out the form below
             <br>     
-            <form action="">
-                Name
-                Phone
-                Email address
-                Message
-
-            </form>
             </p>
-            <img src="/images/01contact.jpg" alt="contact image"height="300px" width="250px">
         </div>
+        <div id="overlay">
+            
+            <form action="https://formsubmit.co/contatogabimonteiro@gmail.com" method="POST">
+                <h2>Contact Us</h2>
+                <input type="hidden" name="_subject" value="New Partner!!!">
+               
+               <label for="name">Name:</label>
+               <input type="text" id="name" placeholder="First and Last Name" required>
+               <!-- <input type="hidden" name="_next" value="https://yourdomain.co/thanks.ejs"> qnd tiver um domain-->
+               
+               <label for="phone">Phone:</label>
+               <input type="text" id="phone" placeholder > 
+               
+               <label for="email">Email:</label>
+               <input type="email" name="email" placeholder="Email Address" required>
+               
+               <label for="message">Message:</label>
+               <textarea name="message" placeholder="write your message here" id="" cols="30" rows="6"></textarea>
+               
+                <div class="btn">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>    
+                    
     </div>
     <%- include('./partials/footer') %>
 </body>

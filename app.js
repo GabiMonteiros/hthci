@@ -1,5 +1,5 @@
 const express = require('express');
-
+const morgan = require('morgan');
 
 const app = express();
 
@@ -9,7 +9,7 @@ app.set('view engine', 'ejs');
 //static files middleware - public css acess to browser
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
-
+app.use(morgan("dev"));
 
 
 app.listen(3000, () => {
@@ -46,6 +46,7 @@ app.get("/team", (req, res) => {
     res.render("team", { title: "Team" });
 });
 
+//thank you rouuuuuuute
 
 //404 page
 app.use((req, res) => {
