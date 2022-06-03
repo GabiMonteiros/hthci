@@ -91,19 +91,31 @@
       text-transform: capitalize;
       margin-bottom: 8px;
     }
-
-     /* ____________________contact page_____________________ */
-
-    .contactWrap{
-        background-image:  linear-gradient(rgba(41, 39, 39, 0.3), rgba(67, 63, 63, 0.3)),url(images/01contact.jpg);
-        background-size: cover;
-        background-size: cover;
-        padding-top: 300px;
-        padding-bottom: 300px;
+    /* ____________________team page_____________________ */
+    /* box */
+    .teamWrap{
+        
     }
 
+    /*imgBx*/
+    .columns image{
+
+    }
+
+    /*content*/
+    .columns content{
+
+    }
+
+    /* ____________________contact page_____________________ */
+
+    /* .contactWrap{
+            EM PROCESSSSSSSSSSSSS
+    } */
+
     #overlay{
-        width: 100%;
+        padding: 50px;
+        
         
     }
 
@@ -111,18 +123,20 @@
         min-width: 450px;
         width: 20%;
         background-color: rgb(255, 255, 255);
-        margin: 17vh auto 0 auto;
-        padding: 40px;
+        padding: 30px;
         border-radius: 3px;
         box-sizing: border-box;
         float: right;
         cursor: pointer;
+       
+        
     }
 
 
-    .overlay h2{
+    #contactWrap h2{
         margin: 0;
         text-align: center;
+       
         
 
     }
@@ -148,14 +162,21 @@
     }
 
   
-    .button{
-       
-    }
+   
 
-    .button{
+    .btn{
         text-align: center;
         margin-top: 30px;
-        width: 50%;
-        min-width: 200px;
-        background: linear-gradient(to right,rgb(255,0,10));
+        width: 80%;
+        min-width: 400px; 
+    }
+
+    button{
+        background-color: rgb(75, 191, 75);
+        color: rgb(246, 237, 226);
+        font-size: 17px;
+        border-radius: 4px;
+        border: none;
+        padding: 8px;
+
     }
