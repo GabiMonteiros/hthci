@@ -92,20 +92,40 @@
       margin-bottom: 8px;
     }
     /* ____________________team page_____________________ */
-    /* box */
+    /* wrapper bg-light-pink --- text -image grid */
+    .bodyWrap{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-color: rgb(123, 243, 123);
+    }
     .teamWrap{
+        /* width: 70%; */
         
+        width: 65%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;   
     }
 
-    /*imgBx*/
-    .columns image{
+    .teamWrap .card-container{
+       
+       
+        margin: 10px; 
+        padding: 15px;
+        display: flex;
+    }    
 
-    }
+   .teamWrap .card-container .teamContent{
+        margin: 15px;
+   }
 
-    /*content*/
-    .columns content{
-
-    }
+   
+   .imgBox img{
+       border-radius: 5px;
+   }
 
     /* ____________________contact page_____________________ */
 
