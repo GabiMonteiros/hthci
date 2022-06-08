@@ -46,7 +46,8 @@ app.get("/team", (req, res) => {
     res.render("team", { title: "Team" });
 });
 
-//thank you rouuuuuuute
+//____________________thank you  page rouuuuuuute______________
+
 
 //404 page
 app.use((req, res) => {

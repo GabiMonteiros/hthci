@@ -4,48 +4,60 @@
 
  <%- include('./partials/nav') %>
 <body>
-    <div class="contactWrap">
-        <h2>Contact Us</h2>
-        <div class="contactBox">
-            <h2>Contact Us</h2>
-            <h1>Contact Home Tutors and Health Charity Initiative</h1>
-            <p>Thank you for your interest in Home Tutors and Health Charity Initiative Education. 
-            We would like to hear from you. We are happy to answer any questions you may have.
-            <br> 
-            Please fill out the form below
-            <br>     
-            </p>
-        </div>
-        <img src="/images/01contact.jpg" alt="contact image" width="500px" height="300px">
-        <div id="overlay">
-            
-            <form action="https://formsubmit.co/contatogabimonteiro@gmail.com" method="POST">
-                
-                <input type="hidden" name="_subject" value="New Partner!!!">
-               
-               <label for="name">Name:</label>
-               <input type="text" id="name" placeholder="First and Last Name" required>
-               <!-- <input type="hidden" name="_next" value="https://yourdomain.co/thanks.ejs"> qnd tiver um domain-->
-               
-               <label for="phone">Country:</label>
-               <input type="text" id="country" placeholder ="Country" > 
+    <div class="img-wrap"></div>
+    <div class="bodyWrap">
+        <div class="contactWrap">
 
-               <label for="phone">Phone:</label>
-               <input type="text" id="phone" placeholder ="Phone" > 
-               
-               <label for="email">Email:</label>
-               <input type="email" name="email" placeholder="Email Address" required>
-               
-               <label for="message">Message:</label>
-               <textarea name="message" placeholder="write your message here" id="" cols="30" rows="6"></textarea>
-               
-                <div class="btn">
-                    <button type="submit">  Connect with Us  </button>
-                </div>
-            </form>
-        </div>    
+            <div class="card-container">
+                
+                <div class="contactContent">
+                
+                    <h2>Contact Home Tutors and Health Charity Initiative</h2>
+                    <p>Thank you for your interest in Home Tutors and Health Charity Initiative Education. 
+                    We would like to hear from you. 
                     
+                    We are happy to answer any questions you may have.
+                    Please fill out the form!
+                        
+                    </p>
+                </div>
+                
+                
+                <div id="overlay">
+                    
+                    <form action="https://formsubmit.co/contatogabimonteiro@gmail.com" method="POST">
+                        
+                        <input type="hidden" name="_subject" value="New Partner!!!">
+                    
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="First and Last Name" required>
+                    <!-- <input type="hidden" name="_next" value="https://yourdomain.co/thanks.ejs"> qnd tiver um domain-->
+                    
+                    <label for="phone">Country:</label>
+                    <input type="text" id="country" placeholder ="Country" > 
+
+                    <label for="phone">Phone:</label>
+                    <input type="text" id="phone" placeholder ="Phone" > 
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea name="message" placeholder="write your message here" id="" cols="30" rows="6"></textarea>
+                    
+                        <div class="btn">
+                            <button type="submit">  Connect with Us  </button>
+                        </div>
+                    </form>
+                </div> 
+
+            </div>
+        
+               
+                        
+        </div>
     </div>
+    
     <%- include('./partials/footer') %>
 </body>
 </html>

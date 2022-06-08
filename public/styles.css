@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+ 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+  
+
     body{
       margin: 0;
       padding: 0;
       font-family: system-ui;
-      background: rgb(241, 241, 241);
+      background: #eeeaea;
       
     }
 
@@ -29,8 +33,8 @@
       overflow: hidden;
       height: 90px;
       line-height: 70px;
-      background: rgb(117, 70, 70);
-      box-shadow: 0 2px 20px rgba(0,0,0,0.5);
+      background: #eeeaea;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
       position: sticky;
       top: 0;
 
@@ -54,8 +58,9 @@
     }
     
     nav a{
-      color: rgb(223, 206, 206);
-      font-weight: 400;
+      color: rgb(67, 152, 47);
+      font-weight: 600;
+      
     }
 
     nav a:hover{
@@ -63,9 +68,7 @@
       
     }    
 
-    /* nav li a:hover{
-      color: beige;
-    } */
+  
 
     
 
@@ -80,9 +83,12 @@
     }
 
     footer{
-      color: #777;
+      color: rgb(254, 254, 254);
       text-align: center;
-      margin: 80px auto 20px;
+      padding-top: 50px;
+      background-color: rgb(41, 117, 24);
+      width: 100%;
+      height: 80px;
     }
     h2{
       margin-bottom: 40px;
@@ -91,27 +97,97 @@
       text-transform: capitalize;
       margin-bottom: 8px;
     }
+
+
+    /* ____________________home page_____________________ */
+    
+    .img-wrap-home{
+      background-color: rgb(117, 70, 70);
+      background-image: linear-gradient(rgba(41, 39, 39, 0.3), rgba(67, 63, 63, 0.3)), url("images/teste.jpg");
+      background-size: cover;
+      object-fit:contain;
+      padding-top: 250px;
+      padding-bottom: 300px;
+    }
+
+    .title-home{
+      max-width: 960px;
+      padding-left: 2.5rem;
+      color: rgb(236, 240, 235);
+      font-family: 'Noto Sans';
+      font-size: 20px;
+    }
+
+
+    .intro-wrap h2{
+      text-align: center;
+      color: rgb(67, 152, 47);
+      font-size: 40px;
+     
+    }  
+    
+    .intro-wrap{
+      font-weight: 500;
+      max-width: 1300px;
+      padding-top: 30px;
+      padding-left: 250px;
+      line-height: 1.8;
+      letter-spacing:1.5;
+      word-spacing: 5px;
+      text-justify:distribute;  
+    }
+
+    .body-home-wrap{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: #eeeaea;
+    }
+
+    .homeWrap{
+      width: 65%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;   
+    }
+
+    .homeWrap .home-container{
+      margin: 10px; 
+      padding: 15px;
+      display: flex;
+    }    
+
+   .homeWrap .home-container .homeContent{
+       margin: 15px;
+   }
+
+   .homeContent{
+      padding: 5px;
+      line-height: 1.5;
+      word-spacing: 1px;
+      text-justify:distribute;     
+   }
     /* ____________________team page_____________________ */
     /* wrapper bg-light-pink --- text -image grid */
     .bodyWrap{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-        background-color: rgb(123, 243, 123);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: #eeeaea;
         
     }
     .text-center{
-        text-align: center;
+      text-align: center;
     }
     .teamWrap{
-        /* width: 70%; */
-        
-        width: 65%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;   
+      width: 65%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;   
     }
 
    
@@ -119,9 +195,9 @@
     .teamWrap .card-container{
        
        
-        margin: 10px; 
-        padding: 15px;
-        display: flex;
+      margin: 10px; 
+      padding: 15px;
+      display: flex;
     }    
 
    .teamWrap .card-container .teamContent{
@@ -140,8 +216,8 @@
    }
    
    .imgBox img{
-       border-radius: 5px;
-       align-items:flex-start;
+      border-radius: 5px;
+      object-fit:fill
    }
 
 
@@ -151,11 +227,40 @@
     /* ____________________contact page_____________________ */
 
     /* .contactWrap{
-            EM PROCESSSSSSSSSSSSS
+     EM PROCESSSSSSSSSSSSS
     } */
 
+    .contactWrap{
+      width: 85%;
+      padding-left: 15%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;   
+    }
+    .contactContent{
+      padding: 5px;
+      line-height: 1.5;
+      word-spacing: 1px;
+    }
+
+    .contactWrap .card-container{
+      margin: 10px; 
+      padding: 15px;
+      display: flex;
+    }  
+
+   
+    .img-wrap{
+      background-color: rgb(117, 70, 70);
+      background-image: linear-gradient(rgba(41, 39, 39, 0.3), rgba(67, 63, 63, 0.3)), url("images/05contact.jpg");
+      background-size: cover;
+      object-fit:contain;
+      padding-top: 250px;
+      padding-bottom: 400px;
+    }
     #overlay{
-        padding: 50px;
+      padding-left: 35px
         
         
     }
@@ -174,13 +279,11 @@
     }
 
 
-    #contactWrap h2{
-        margin: 0;
-        text-align: center;
-       
-        
-
+    .contactWrap h2{
+      
+      text-align: center;
     }
+
 
     label{
         display: block;
