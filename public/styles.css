@@ -128,25 +128,27 @@
     
     .intro-wrap{
       font-weight: 500;
-      max-width: 1300px;
-      padding-top: 30px;
-      padding-left: 250px;
+      text-align: center;
+      text-align: left;
+      padding-left: 180px;
+      padding-right: 180px;
       line-height: 1.8;
-      letter-spacing:1.5;
-      word-spacing: 5px;
-      text-justify:distribute;  
+      word-spacing: 10px;
     }
 
+    .text-center h2{
+      padding-top: 15px;
+    }
     .body-home-wrap{
       display: flex;
       align-items: center;
       justify-content: center;
-      min-height: 100vh;
+      
       background-color: #eeeaea;
     }
 
     .homeWrap{
-      width: 65%;
+      width: 75%;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -164,11 +166,30 @@
    }
 
    .homeContent{
-      padding: 5px;
+      padding-left: 5px;
+      padding-right: 10px;
       line-height: 1.5;
-      word-spacing: 1px;
-      text-justify:distribute;     
-   }
+      word-spacing: 2px;      
+    }
+
+    .home-container h3{
+      color: rgb(67, 152, 47);
+      font-size: 20px;
+    }
+
+    .home-container .imgBox{
+      padding: 10px;
+    }
+
+    .moreLink{
+      color: #eeeaea;
+    }
+
+    .moreLink:hover{
+      color: rgb(92, 231, 65);
+      
+    }  
+    
     /* ____________________team page_____________________ */
     /* wrapper bg-light-pink --- text -image grid */
     .bodyWrap{
@@ -231,10 +252,9 @@
     } */
 
     .contactWrap{
-      width: 85%;
-      padding-left: 15%;
+      width: 75%;
+      padding-left: 0%;
       display: flex;
-      justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;   
     }
@@ -258,6 +278,7 @@
       object-fit:contain;
       padding-top: 250px;
       padding-bottom: 400px;
+      padding-right: 15px;
     }
     #overlay{
       padding-left: 35px
@@ -313,6 +334,7 @@
         margin-top: 30px;
         width: 80%;
         min-width: 400px; 
+        
     }
 
     button{
@@ -322,8 +344,15 @@
         border-radius: 4px;
         border: none;
         padding: 8px;
+        cursor: pointer;
 
     }
+
+    .contactContent h2{
+      font-size: 22px;
+      color:rgb(67, 152, 47);
+    }
+
 
  /*___________________ responsive (team )_______________*/
   @media(max-width: 991px)
@@ -349,3 +378,5 @@
 
 
     }
+
+    /* TEM QUE FAZER PRA HOME - intro-wrap  */
