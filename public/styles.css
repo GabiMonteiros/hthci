@@ -73,7 +73,7 @@
     
 
     .logo{
-      font-size: medium;  
+      font-size:x-large;
       width: 340px;
       float: left;
       position:fixed;
@@ -120,6 +120,7 @@
 
 
     .intro-wrap h2{
+      padding-top: 15px;
       text-align: center;
       color: rgb(67, 152, 47);
       font-size: 40px;
@@ -201,6 +202,31 @@
       padding-bottom: 300px;
     }
     
+    /*____________________ about page____________________  */
+
+    .aboutWrap .about-container{
+      padding-top: 60px;
+      padding-left: 200px;
+      padding-bottom: 80px;
+      display: flex;
+    }    
+
+    .aboutWrap{
+      width: 75%;
+      display: flex;
+      align-items: center;
+         
+    }
+
+    
+
+   .aboutWrap .home-container{
+       margin: 15px;
+   }
+   
+
+    
+
     /* ____________________team page_____________________ */
     /* wrapper bg-light-pink --- text -image grid */
     .bodyWrap{
@@ -364,6 +390,38 @@
       color:rgb(67, 152, 47);
     }
 
+/* ____________________get involved _______________________*/
+
+  .img-wrap-involved{
+    background-color: rgb(117, 70, 70);
+    background-image: linear-gradient(rgba(41, 39, 39, 0.3), rgba(67, 63, 63, 0.3)), url("images/01getInvol.jpg");
+    background-size: cover;
+    object-fit:contain;
+    padding-top: 250px;
+    padding-bottom: 300px;
+  }
+
+  .getInvolved-content h2{
+      padding-top: 15px;
+      text-align: center;
+      color: rgb(67, 152, 47);
+      font-size: 40px;
+     
+    }  
+    
+   
+  .getInvolved-content{
+    font-weight: 500;
+    text-align: center;
+    text-align: left;
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-bottom: 80px;
+    line-height: 1.8;
+    word-spacing: 10px;
+
+  }
+
 
  /*___________________ responsive (team )_______________*/
   @media(max-width: 991px)
@@ -391,3 +449,6 @@
     }
 
     /* TEM QUE FAZER PRA HOME - intro-wrap  */
+
+    /* aboutWrap{
+      width: 95%; */
