@@ -2,7 +2,9 @@
  
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
   
-
+  *{
+    box-sizing: border-box;
+  }
     body{
       margin: 0;
       padding: 0;
@@ -20,7 +22,10 @@
       color: #222;
     }
 
-    /* ____________________nav & footer styles_____________________ */
+    /* ____________________nav_____________________ */
+/* 
+    
+
 
     .navContainer{
       width: 90%;
@@ -73,7 +78,7 @@
     
 
     .logo{
-      font-size:x-large;
+      font-size: x-large;
       width: 340px;
       float: left;
       position:fixed;
@@ -82,14 +87,7 @@
       
     }
 
-    footer{
-      color: rgb(254, 254, 254);
-      text-align: center;
-      padding-top: 50px;
-      background-color: rgb(41, 117, 24);
-      width: 100%;
-      height: 80px;
-    }
+    
     h2{
       margin-bottom: 40px;
     }
@@ -98,6 +96,37 @@
       margin-bottom: 8px;
     }
 
+    /* ____________________footer_____________________ */
+
+    .footer-container{
+      min-width: 1170px;
+     
+      margin: auto;
+    }
+    .footer-row{
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    ul{
+      list-style: none;
+    }
+
+    .footerStyle{
+      color: rgb(254, 254, 254);
+      background-color: rgb(24, 81, 11);
+      padding: 70px 0; 
+    }
+
+    .footer-col{
+       width: 25%;
+       padding: 0 40px;
+    }
+
+    .footer-col h4{
+      font-size: 18px;
+      color: rgb(254, 254, 254);
+    }
 
     /* ____________________home page_____________________ */
     
@@ -206,7 +235,8 @@
 
     .aboutWrap .about-container{
       padding-top: 60px;
-      padding-left: 200px;
+      padding-left: 40px;
+      /* padding-left: 200px; */
       padding-bottom: 80px;
       display: flex;
     }    
@@ -394,7 +424,7 @@
 
   .img-wrap-involved{
     background-color: rgb(117, 70, 70);
-    background-image: linear-gradient(rgba(41, 39, 39, 0.3), rgba(67, 63, 63, 0.3)), url("images/01getInvol.jpg");
+    background-image: linear-gradient(rgba(41, 39, 39, 0.3), rgba(67, 63, 63, 0.3)), url("images/03getInvol.jpg");
     background-size: cover;
     object-fit:contain;
     padding-top: 250px;
