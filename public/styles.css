@@ -10,28 +10,23 @@
       padding: 0;
       font-family: system-ui;
       background: #eeeaea;
+      line-height: 1.5;
       
     }
 
     
-
+/* 
     h3, a, ul{
       margin: 0;
       padding: 0;
       text-decoration: none;
-      color: #222;
-    }
+     
+    } */
 
     /* ____________________nav_____________________ */
 /* 
     
 
-
-    .navContainer{
-      width: 90%;
-      
-      
-    }
     /* nav = navbar  */
     nav{
       width: 100%;
@@ -46,6 +41,9 @@
     }
     nav ul{
       float: right;
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
     }
 
   
@@ -65,6 +63,9 @@
     nav a{
       color: rgb(67, 152, 47);
       font-weight: 600;
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
       
     }
 
@@ -100,6 +101,8 @@
 
     .footer-container{
       min-width: 1170px;
+      height: 150px;
+      background-color: #fff;
      
       margin: auto;
     }
@@ -108,8 +111,11 @@
       flex-wrap: wrap;
     }
 
-    ul{
+    ul, a{
       list-style: none;
+      color: #eeeaea;
+      text-decoration: none;
+
     }
 
     .footerStyle{
@@ -123,11 +129,25 @@
        padding: 0 40px;
     }
 
-    .footer-col h4{
+    .footer-col h4 {
       font-size: 18px;
-      color: rgb(254, 254, 254);
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      font-weight: 500;
+      position: relative;
+   
     }
 
+    .footer-col h4::before{
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      background-color: #e91e63;
+      height: 2px;
+      box-sizing: border-box;
+      width: 50px;
+    }
     /* ____________________home page_____________________ */
     
     .img-wrap-home{
