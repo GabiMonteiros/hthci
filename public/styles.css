@@ -155,12 +155,18 @@
 
     .footerBottom p{
       text-align: center;
-      
+    
     }
 
-    footer{
-      content: '';
-      position: absolute;
+    .line{
+      height: 1px;
+      background-color: rgb(254, 254, 254);
+      width: 1500px;
+      margin: 2rem auto;
+  
+     
+
+
     }
     /* ____________________home page_____________________ */
     
@@ -198,16 +204,19 @@
       padding-right: 180px;
       line-height: 1.8;
       word-spacing: 10px;
+      
     }
 
     .text-center h2{
       padding-top: 15px;
+      color: rgb(67, 152, 47);
     }
+
+    
     .body-home-wrap{
       display: flex;
       align-items: center;
       justify-content: center;
-      
       background-color: #eeeaea;
     }
 
@@ -244,14 +253,23 @@
     .home-container .imgBox{
       padding: 10px;
     }
-
-    .moreLink{
-      color: #eeeaea;
+    .homeContent p{
+      width: 770px;
+    }
+    .homeContent a{
+      color: rgb(67, 152, 47);
+    }
+    .homeContent  button{
+      
+      border: 1px solid rgb(67, 152, 47);
+      background-color:#eeeaea;
+      
+      
     }
 
     .moreLink:hover{
       color: rgb(92, 231, 65);
-      
+     
     }  
 
     /*____________________ project page__________________ */
