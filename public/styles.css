@@ -103,7 +103,6 @@
       min-width: 1170px;
       height: 150px;
       background-color: rgb(24, 81, 11);
-     
       margin: auto;
     }
     .footer-row{
@@ -366,10 +365,6 @@
 
     /* ____________________contact page_____________________ */
 
-    /* .contactWrap{
-     EM PROCESSSSSSSSSSSSS
-    } */
-
     .contactWrap{
       width: 75%;
       padding-left: 0%;
@@ -377,10 +372,11 @@
       align-items: center;
       flex-wrap: wrap;   
     }
-    .contactContent{
-      padding: 5px;
+    .contactContent p{
+      padding-top: 120px;
       line-height: 1.5;
       word-spacing: 1px;
+      width: 770px;
     }
 
     .contactWrap .card-container{
@@ -526,8 +522,38 @@
         {
             margin-left: 20px;
         }
+        /* _________footer_________ */
+        .footer-col{
+          width: 50%;
+          margin-bottom: 30px;
+        }
 
+    }
+    @media(max-width:574px){
+      .footer-row {
+        flex-direction: column;
+        padding: 0;
+        
+      }
+      .footerStyle{
+        padding: 0 auto;
+        height: 550px;
+      }
+      .footer-row .footer-col{
+        flex-direction: column;
+        max-width: 350px;
+      }
 
+       .footerBottom{
+        padding-top: 205px
+      }
+      .line{
+        height: 0px;
+        background-color: none;
+        
+        
+
+      }
     }
 
     /* TEM QUE FAZER PRA HOME - intro-wrap  */
