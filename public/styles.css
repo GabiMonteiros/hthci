@@ -75,9 +75,6 @@
     }    
 
   
-
-    
-
     .logo{
       font-size: x-large;
       width: 340px;
@@ -97,6 +94,9 @@
       margin-bottom: 8px;
     }
 
+    #donateBtn button{
+      padding: 8px 15px 8px 15px ;
+    }
     /* ____________________footer_____________________ */
 
     .footer-container{
@@ -162,9 +162,6 @@
       background-color: rgb(254, 254, 254);
       width: 1500px;
       margin: 2rem auto;
-  
-     
-
 
     }
     /* ____________________home page_____________________ */
@@ -530,6 +527,13 @@
 
     }
     @media(max-width:574px){
+      .primary-navigation{
+        position: fixed;
+        inset: 0 0 0 30%;
+        flex-direction: column;
+        padding: min(30vh, 10rem) 2em;
+        background-color: rgb(106, 58, 177);
+      }
       .footer-row {
         flex-direction: column;
         padding: 0;
