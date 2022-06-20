@@ -11,6 +11,7 @@
       font-family: system-ui;
       background: #eeeaea;
       line-height: 1.5;
+      overflow-x: hidden;
       
     }
 
@@ -73,6 +74,10 @@
       color: rgb(92, 231, 65);
       
     }    
+
+    .mobile-nav-toggle{
+      display: none;
+    }
 
   
     .logo{
@@ -502,43 +507,43 @@
  /*___________________ responsive (team )_______________*/
   @media(max-width: 991px)
     {
-        .teamWrap
-        {
-            flex-direction: column;
-        }
-        .teamWrap .card-container
-        {
-            flex-direction: column;
-            max-width: 350px;
-        }
-        .teamWrap .card-container .imgBox
-        {
-            min-width: 100%;
+      .teamWrap
+      {
+        flex-direction: column;
+      }
+      .teamWrap .card-container
+      {
+        flex-direction: column;
+        max-width: 350px;
+      }
+      .teamWrap .card-container .imgBox
+      {
+        min-width: 100%;
            
-        }
-        .teamWrap .card-container .teamContent
-        {
-            margin-left: 20px;
-        }
-        /* _________footer_________ */
-        .footer-col{
-          width: 35%;
-          margin-bottom: 20px;
-        }
-        .footer-container{
-          min-width: 600px;
+      }
+      .teamWrap .card-container .teamContent
+      {
+        margin-left: 20px;
+      }
+      /* _________footer_________ */
+      .footer-col{
+        width: 35%;
+        margin-bottom: 20px;
+      }
+      .footer-container{
+        min-width: 600px;
           
         
-        }
-        .footerBottom{
-          padding-top: 60px;
-          padding-right: 160px;
+      }
+      .footerBottom{
+        padding-top: 60px;
+        padding-right: 160px;
 
-        }
-        .line{
-          height: 0px;
-          background-color: none;
-        }
+      }
+      .line{
+        height: 0px;
+        background-color: none;
+      }
 
     }
     @media(max-width:574px){
@@ -548,13 +553,18 @@
         z-index: 1000;
         inset: 0 0 0 30%;
         flex-direction: column;
-        padding: min(30vh, 10rem) 2em;
+        padding: min(30vh, 10rem) 3em;
+        /* padding: 30 160 70 160; */
         background: #eeeaea;
         /* background: hsl (0 0% 100% /0.1);  transparent*/
-        
+        transform: translateX(100%);
       }
 
+      .primary-navigation [data-visible ="true"]{
+        transform: translateX(0%);
+      }
       .mobile-nav-toggle{
+        display: block;
         position: absolute;
         z-index: 9999; /*on top of everything*/
         background: url(images/menu.png);

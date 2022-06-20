@@ -1,10 +1,18 @@
-const { links } = require("express/lib/response");
+const primaryNav = document.querySelector(".primary-navigation");
+const navToggle = document.querySelector(".mobile-nav-toggle");
 
-document.querySelectorAll('.nav-link').forEach(links => {
-    console.log(link);
-})
+navToggle.addEventListener('click', () => {
+    const visibility = primaryNav.getAttribute("data-visible");
+    // console.log(visibility);
+    if (visibility === 'false') {
+        primaryNav.setAttribute('data-visible', true);
+        navToggle.setAttribute('aria-expanded', true)
+    } else (visibility === 'true'){
+        primaryNav.setAttribute('data-visible', false);
+        navToggle.setAttribute('aria-expanded', false)
+    }
+});
 
 
 
-//const activePage = window.location.pathname;
-//console.log(activePage);
+
