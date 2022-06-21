@@ -16,13 +16,6 @@
     }
 
     
-/* 
-    h3, a, ul{
-      margin: 0;
-      padding: 0;
-      text-decoration: none;
-     
-    } */
 
     /* ____________________nav_____________________ */
 /* 
@@ -113,7 +106,7 @@
     .footer-row{
       display: flex;
       flex-wrap: wrap;
-      padding-left: 115px;
+      
     }
 
     ul, a{
@@ -505,57 +498,9 @@
 
 
  /*___________________ responsive (team )_______________*/
-  @media(max-width: 991px)
+  @media(max-width: 1200px)
     {
-      .teamWrap
-      {
-        flex-direction: column;
-      }
-      .teamWrap .card-container
-      {
-        flex-direction: column;
-        max-width: 350px;
-      }
-      .teamWrap .card-container .imgBox
-      {
-        min-width: 100%;
-           
-      }
-      .teamWrap .card-container .teamContent
-      {
-        margin-left: 20px;
-      }
-      /* _________footer_________ */
-      .footer-col{
-        width: 35%;
-        margin-bottom: 20px;
-        font-size: 15px;
-      }
-      .footer-container{
-        min-width: 600px;
-          
-        
-      }
-      .footerBottom{
-        padding: 100px 50px 0 0 ;
-        
-
-      }
-
-      /* .footer-col{
-        padding: 0 0 0 150px;
-        font-size: 15px;
-      
-      }
-      .footerBottom{
-        padding-top: 255px
-      } */
-      .line{
-        display: none;
-      }
-
-    }
-    @media(max-width:574px){
+      /* ______________nav______________*/
       .primary-navigation{
         --gap: 2em;
         position: fixed;
@@ -590,8 +535,67 @@
       .mobile-nav-toggle[aria-expanded="true"]{
         background-image:  url(images/menu.png);
       }
+      
+
+    }
+
+    @media(max-width: 1200px)
+    {
+      .teamWrap
+      {
+        flex-direction: column;
+      }
+      .teamWrap .card-container
+      {
+        flex-direction: column;
+        max-width: 900px;
+      }
+      .teamWrap .card-container .imgBox
+      {
+        min-width: 100%;
+           
+      }
+      .teamWrap .card-container .teamContent
+      {
+        margin-left: 20px;
+      }
+      .imgBox
+      {
+        align-items: center;
+        padding-left: 50px;
+        
+      }
+      
+      /* _________footer_________ */
       .footer-col{
-        padding: 0 0 0 150px;
+        width: 35%;
+        margin-bottom: 20px;
+        font-size: 15px;
+      }
+      .footer-container{
+        min-width: 600px;
+          
+        
+      }
+      .footerBottom{
+        padding: 100px 50px 0 0  
+
+      }
+      .footer-row{
+        /* padding-left: 90px; */
+        align-items: center;
+        align-content: center;
+        
+      }
+      .line{
+        display: none;
+      }
+
+    }
+    @media(max-width:574px){
+      
+      .footer-col{
+        padding: 0 0 0 10px;
         font-size: 15px;
       
       }
