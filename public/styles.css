@@ -167,9 +167,8 @@
     
     .img-wrap-home{
       background-color: rgb(117, 70, 70);
-      background-image: linear-gradient(rgba(41, 39, 39, 0.3), rgba(67, 63, 63, 0.3)), url("images/teste.jpg");
+      background-image: linear-gradient(rgba(41, 39, 39, 0.3), rgba(67, 63, 63, 0.3)), url("images/01homeBanner.jpg");
       background-size: cover;
-      object-fit:contain;
       padding-top: 250px;
       padding-bottom: 300px;
     }
@@ -271,9 +270,8 @@
 
     .img-wrap-projects{
       background-color: rgb(117, 70, 70);
-      background-image: linear-gradient(rgba(41, 39, 39, 0.3), rgba(67, 63, 63, 0.3)), url("images/06project.jpg");
+      background-image: linear-gradient(rgba(41, 39, 39, 0.3), rgba(67, 63, 63, 0.3)), url("images/01projectBanner.jpg");
       background-size: cover;
-      object-fit:contain;
       padding-top: 200px;
       padding-bottom: 300px;
     }
@@ -305,7 +303,6 @@
     
 
     /* ____________________team page_____________________ */
-    /* wrapper bg-light-pink --- text -image grid */
     .bodyWrap{
       display: flex;
       align-items: center;
@@ -362,58 +359,51 @@
     /* ____________________contact page_____________________ */
 
     .contactWrap{
-      width: 75%;
       padding-left: 0%;
       display: flex;
       align-items: center;
       flex-wrap: wrap;   
     }
     .contactContent p{
-      padding-top: 120px;
-      line-height: 1.5;
-      word-spacing: 1px;
+      
+      line-height: 1.8;
+      word-spacing: 2px;
       width: 770px;
     }
 
-    .contactWrap .card-container{
-      margin: 10px; 
-      padding: 15px;
-      display: flex;
-    }  
-
+  
    
     .img-wrap{
       background-color: rgb(117, 70, 70);
-      background-image: linear-gradient(rgba(41, 39, 39, 0.3), rgba(67, 63, 63, 0.3)), url("images/05contact.jpg");
+      background-image: linear-gradient(rgba(41, 39, 39, 0.3), rgba(67, 63, 63, 0.3)), url("images/01contactBanner.jpg");
       background-size: cover;
-      object-fit:contain;
       padding-top: 250px;
       padding-bottom: 400px;
       padding-right: 15px;
     }
     #overlay{
-      padding-left: 35px
+      padding: 40px
         
         
     }
 
     form{
-        min-width: 450px;
-        width: 20%;
-        background-color: rgb(255, 255, 255);
-        padding: 30px;
-        border-radius: 3px;
-        box-sizing: border-box;
-        float: right;
-        cursor: pointer;
-       
+      min-width: 40px;
+      background-color: rgb(255, 255, 255);
+      padding: 30px;
+      border-radius: 3px;
+      box-sizing: border-box;
+      cursor: pointer;    
         
     }
 
 
-    .contactWrap h2{
+    .contactContent h2{
       
       text-align: center;
+      padding-top: 15px;
+      color: rgb(67, 152, 47);
+      font-size: 40px;
     }
 
 
@@ -443,7 +433,7 @@
     .btn{
         text-align: center;
         margin-top: 30px;
-        width: 80%;
+        width: 100%;
         min-width: 400px; 
         
     }
@@ -459,10 +449,7 @@
 
     }
 
-    .contactContent h2{
-      font-size: 22px;
-      color:rgb(67, 152, 47);
-    }
+   
 
 /* ____________________get involved _______________________*/
 
@@ -470,7 +457,6 @@
     background-color: rgb(117, 70, 70);
     background-image: linear-gradient(rgba(41, 39, 39, 0.3), rgba(67, 63, 63, 0.3)), url("images/03getInvol.jpg");
     background-size: cover;
-    object-fit:contain;
     padding-top: 250px;
     padding-bottom: 300px;
   }
@@ -500,6 +486,13 @@
  /*___________________ responsive (team )_______________*/
   @media(max-width: 1200px)
     {
+      /*img banner*/
+      .img-wrap{
+        /* padding: 80px 0 330 0; */
+        padding-top: 80px;
+        padding-bottom: 330px;
+      }
+
       /* ______________nav______________*/
       .primary-navigation{
         --gap: 2em;
@@ -539,7 +532,7 @@
 
     }
 
-    @media(max-width: 1200px)
+    @media(max-width: 950px)
     {
       .teamWrap
       {
@@ -592,8 +585,21 @@
       }
 
     }
+
+
     @media(max-width:574px){
+
+       .imgBox
+      {
+        align-items: center;
+        padding-left: 0px;
+        
+      }
       
+      .teamWrap .card-container{
+        margin: 0;
+        padding: 0;
+      }
       .footer-col{
         padding: 0 0 0 10px;
         font-size: 15px;
@@ -618,6 +624,7 @@
         padding-top: 255px
       }
       
+
     }
 
     /* TEM QUE FAZER PRA HOME - intro-wrap  */
