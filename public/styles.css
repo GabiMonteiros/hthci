@@ -166,14 +166,14 @@
     /* ____________________home page_____________________ */
     
     .img-wrap-home{
-      background-color: rgb(117, 70, 70);
+      background-color: rgb(67, 152, 47);
       background-image: linear-gradient(rgba(41, 39, 39, 0.3), rgba(67, 63, 63, 0.3)), url("images/01homeBanner.jpg");
       background-size: cover;
-      padding-top: 250px;
-      padding-bottom: 300px;
+      padding-top: 200px;
+      padding-bottom: 450px; /*era 300px*/
     }
-
-    .title-home{
+    
+    .title-home {
       max-width: 960px;
       padding-left: 2.5rem;
       color: rgb(236, 240, 235);
@@ -181,26 +181,7 @@
       font-size: 20px;
     }
 
-
-    .intro-wrap h2{
-      padding-top: 15px;
-      text-align: center;
-      color: rgb(67, 152, 47);
-      font-size: 40px;
-     
-    }  
-    
-    .intro-wrap{
-      font-weight: 500;
-      text-align: center;
-      text-align: left;
-      padding-left: 180px;
-      padding-right: 180px;
-      line-height: 1.8;
-      word-spacing: 10px;
-      
-    }
-
+  
     .text-center h2{
       padding-top: 15px;
       color: rgb(67, 152, 47);
@@ -223,6 +204,9 @@
     }  
 
  /* ____________________team /project / home  page_____________________ */
+ 
+
+ 
     .bodyWrap{
       display: flex;
       align-items: center;
@@ -276,14 +260,32 @@
       
     }
 
+    /*____________________ home /project page__________________ */
+
+    .intro-wrap h2{
+      padding-top: 15px;
+      text-align: center;
+      color: rgb(67, 152, 47);
+      font-size: 40px;
+     
+    }  
+    
+    .intro-wrap{
+      font-weight: 500;
+      text-align: left;
+      padding-left: 310px;
+      padding-right: 310px;
+      line-height: 1.8;
+      word-spacing: 10px;
+    }
     /*____________________ project page__________________ */
 
     .img-wrap-projects{
-      background-color: rgb(117, 70, 70);
+      background-color: rgb(67, 152, 47);
       background-image: linear-gradient(rgba(41, 39, 39, 0.3), rgba(67, 63, 63, 0.3)), url("images/01projectBanner.jpg");
       background-size: cover;
       padding-top: 200px;
-      padding-bottom: 300px;
+      padding-bottom: 400px;
     }
     
     
@@ -331,7 +333,7 @@
   
    
     .img-wrap{
-      background-color: rgb(117, 70, 70);
+      background-color: rgb(67, 152, 47);
       background-image: linear-gradient(rgba(41, 39, 39, 0.3), rgba(67, 63, 63, 0.3)), url("images/01contactBanner.jpg");
       background-size: cover;
       padding-top: 250px;
@@ -485,15 +487,11 @@
       .mobile-nav-toggle[aria-expanded="true"]{
         background-image:  url(images/menu.png);
       }
-      
-
-    }
-
-    @media(max-width: 950px)
-    {
+      /* home/ project /team*/
       .wrap
       {
         flex-direction: column;
+        align-content: center;
       }
       .wrap .container
       {
@@ -507,14 +505,28 @@
       }
       .wrap .container .content
       {
-        margin-left: 20px;
+        margin: 0 100px;
       }
       .imgBox
       {
         align-items: center;
-        padding-left: 50px;
+        padding: 0 130px;
         
       }
+
+      .intro-wrap{
+        padding: 0 200px 0 200px;
+      }
+
+      /*home*/
+      button{
+        margin-bottom: 20px;
+      }
+    }
+
+    @media(max-width: 950px)
+    {
+      
       
       /* _________footer_________ */
       .footer-col{
@@ -532,7 +544,6 @@
 
       }
       .footer-row{
-        /* padding-left: 90px; */
         align-items: center;
         align-content: center;
         
