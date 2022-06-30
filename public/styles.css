@@ -206,54 +206,10 @@
       color: rgb(67, 152, 47);
     }
 
-    
-    .body-home-wrap{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #eeeaea;
-    }
-
-    .homeWrap{
-      width: 75%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;   
-    }
-
-    .homeWrap .home-container{
-      margin: 10px; 
-      padding: 15px;
-      display: flex;
-    }    
-
-   .homeWrap .home-container .homeContent{
-       margin: 15px;
-   }
-
-   .homeContent{
-      padding-left: 5px;
-      padding-right: 10px;
-      line-height: 1.5;
-      word-spacing: 2px;      
-    }
-
-    .home-container h3{
-      color: rgb(67, 152, 47);
-      font-size: 20px;
-    }
-
-    .home-container .imgBox{
-      padding: 10px;
-    }
-    .homeContent p{
-      width: 770px;
-    }
-    .homeContent a{
+    .content a{
       color: rgb(67, 152, 47);
     }
-    .homeContent  button{
+    .content button{
       
       border: 1px solid rgb(67, 152, 47);
       background-color:#eeeaea;
@@ -266,6 +222,60 @@
      
     }  
 
+ /* ____________________team /project / home  page_____________________ */
+    .bodyWrap{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: #eeeaea;
+        
+    }
+    .text-center{
+      text-align: center;
+    }
+    .wrap{
+      width: 70%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;   
+    }
+
+   
+    .wrap .container{
+       
+       
+      margin: 10px; 
+      padding: 15px;
+      display: flex;
+    }    
+
+   .wrap .container .content{
+        margin: 15px;
+   }
+
+   .content{
+      padding: 5px;
+      line-height: 1.5;
+      word-spacing: 1px;
+      text-justify:distribute;     
+   }
+
+   .content:not(:last-child){
+        margin-bottom: 1em;
+   }
+   
+   .imgBox img{
+      border-radius: 5px;
+      object-fit:fill
+   }
+
+   .projectTitle{
+      color:  rgb(67, 152, 47);
+      
+    }
+
     /*____________________ project page__________________ */
 
     .img-wrap-projects{
@@ -275,6 +285,7 @@
       padding-top: 200px;
       padding-bottom: 300px;
     }
+    
     
     /*____________________ about page____________________  */
 
@@ -298,60 +309,6 @@
    .aboutWrap .home-container{
        margin: 15px;
    }
-   
-
-    
-
-    /* ____________________team page_____________________ */
-    .bodyWrap{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      background-color: #eeeaea;
-        
-    }
-    .text-center{
-      text-align: center;
-    }
-    .teamWrap{
-      width: 65%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;   
-    }
-
-   
-   
-    .teamWrap .card-container{
-       
-       
-      margin: 10px; 
-      padding: 15px;
-      display: flex;
-    }    
-
-   .teamWrap .card-container .teamContent{
-        margin: 15px;
-   }
-
-   .teamContent{
-      padding: 5px;
-      line-height: 1.5;
-      word-spacing: 1px;
-      text-justify:distribute;     
-   }
-
-   .teamContent:not(:last-child){
-        margin-bottom: 1em;
-   }
-   
-   .imgBox img{
-      border-radius: 5px;
-      object-fit:fill
-   }
-
 
 
 
@@ -534,21 +491,21 @@
 
     @media(max-width: 950px)
     {
-      .teamWrap
+      .wrap
       {
         flex-direction: column;
       }
-      .teamWrap .card-container
+      .wrap .container
       {
         flex-direction: column;
         max-width: 900px;
       }
-      .teamWrap .card-container .imgBox
+      .wrap .container .imgBox
       {
         min-width: 100%;
            
       }
-      .teamWrap .card-container .teamContent
+      .wrap .container .content
       {
         margin-left: 20px;
       }
@@ -596,7 +553,7 @@
         
       }
       
-      .teamWrap .card-container{
+      .wrap .container{
         margin: 0;
         padding: 0;
       }
