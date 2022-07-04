@@ -301,12 +301,12 @@
       padding: 0 55px 0 55px ;
       min-height: 60vh;
     }
-    
-    .aboutImg{
-      display: flex;
-      
-    }
    
+
+    .wrap .container .aboutImg{
+      display: flex;
+      padding: 0 10px 0 10px 0 ;
+    }
 
 
 
@@ -404,12 +404,22 @@
 
     }
 
-   
 
+ /* ____________________team _______________________*/
+
+   
+    .img-wrap-team{
+      background-color: rgb(67, 152, 47);
+      background-image: linear-gradient(rgba(41, 39, 39, 0.3), rgba(67, 63, 63, 0.3)), url("images/04teamBanner.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding-top: 200px;
+      padding-bottom: 400px;
+    }
 /* ____________________get involved _______________________*/
 
   .img-wrap-involved{
-    background-color: rgb(117, 70, 70);
+    background-color: rgb(67, 152, 47);
     background-image: linear-gradient(rgba(41, 39, 39, 0.3), rgba(67, 63, 63, 0.3)), url("images/03getInvol.jpg");
     background-size: cover;
     padding-top: 250px;
@@ -420,7 +430,13 @@
 
 
  /*___________________ responsive (team )_______________*/
-  @media(max-width: 1200px)
+ /* @media(max-width: 1645) 
+ {
+  .wrap .container .aboutImg{
+    padding: ;
+  }
+ } */
+ @media(max-width: 1200px)
     {
       /*img banner*/
       .img-wrap{
@@ -500,6 +516,7 @@
         margin-bottom: 20px;
       }
     }
+
 
     @media(max-width: 950px)
     {
