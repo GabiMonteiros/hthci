@@ -169,6 +169,9 @@
       background-color: rgb(67, 152, 47);
       background-image: linear-gradient(rgba(41, 39, 39, 0.3), rgba(67, 63, 63, 0.3)), url("images/01homeBanner.jpg");
       background-size: cover;
+      background-attachment: fixed ;
+      background-position: center center;
+      background-repeat: no-repeat;
       padding-top: 200px;
       padding-bottom: 450px; /*era 300px*/
     }
@@ -229,7 +232,6 @@
    
     .wrap .container{
        
-       
       margin: 10px; 
       padding: 15px;
       display: flex;
@@ -273,8 +275,7 @@
     .intro-wrap{
       font-weight: 500;
       text-align: left;
-      padding-left: 310px;
-      padding-right: 310px;
+      padding: 0 310px 25px 310px;
       line-height: 1.8;
       word-spacing: 10px;
     }
@@ -284,6 +285,9 @@
       background-color: rgb(67, 152, 47);
       background-image: linear-gradient(rgba(41, 39, 39, 0.3), rgba(67, 63, 63, 0.3)), url("images/01projectBanner.jpg");
       background-size: cover;
+      background-attachment: fixed ;
+      background-position: center center;
+      background-repeat: no-repeat;
       padding-top: 200px;
       padding-bottom: 400px;
     }
@@ -303,12 +307,10 @@
     }
    
 
-    .wrap .container .aboutImg{
-      display: flex;
-      padding: 0 10px 0 10px 0 ;
+
+    .aboutImg{
+      width: 82%;
     }
-
-
 
 
     /* ____________________contact page_____________________ */
@@ -332,7 +334,10 @@
       background-color: rgb(67, 152, 47);
       background-image: linear-gradient(rgba(41, 39, 39, 0.3), rgba(67, 63, 63, 0.3)), url("images/01contactBanner.jpg");
       background-size: cover;
-      padding-top: 250px;
+      background-attachment: fixed ;
+      background-position: center center;
+      background-repeat: no-repeat;
+      padding-top: 200px;
       padding-bottom: 400px;
       padding-right: 15px;
     }
@@ -410,8 +415,10 @@
    
     .img-wrap-team{
       background-color: rgb(67, 152, 47);
-      background-image: linear-gradient(rgba(41, 39, 39, 0.3), rgba(67, 63, 63, 0.3)), url("images/04teamBanner.jpg");
+      background-image: linear-gradient(rgba(41, 39, 39, 0.3), rgba(67, 63, 63, 0.3)), url("images/01teamBanner.jpg");
       background-size: cover;
+      background-attachment: fixed ;
+      background-position: center center;
       background-repeat: no-repeat;
       padding-top: 200px;
       padding-bottom: 400px;
@@ -420,13 +427,24 @@
 
   .img-wrap-involved{
     background-color: rgb(67, 152, 47);
-    background-image: linear-gradient(rgba(41, 39, 39, 0.3), rgba(67, 63, 63, 0.3)), url("images/03getInvol.jpg");
+    background-image: linear-gradient(rgba(41, 39, 39, 0.3), rgba(67, 63, 63, 0.3)), url("images/01getInvolBanner.jpg");
     background-size: cover;
+    background-attachment: fixed ;
+    background-position: center center;
+    background-repeat: no-repeat;
     padding-top: 250px;
     padding-bottom: 300px;
   }
 
- 
+
+
+  .paypalBtn{
+    width:  260px;
+    height: 120px ;
+    background-color: #eeeaea;
+    display: block;
+    margin:  0 auto;
+  }
 
 
  /*___________________ responsive (team )_______________*/
@@ -520,7 +538,17 @@
 
     @media(max-width: 950px)
     {
+      /* ______________contact__________ */
+      .contactContent{
+        width: 520px;
+      }
+
+      .contactContent p{
       
+        width: 495px;
+        padding-left: 35px;
+        text-align: center;
+      }
       
       /* _________footer_________ */
       .footer-col{
