@@ -232,8 +232,8 @@
    
     .wrap .container{
        
-      margin: 10px; 
-      padding: 15px;
+      margin: 10px 0; 
+      padding: 0  15px 0;
       display: flex;
     }    
 
@@ -258,7 +258,7 @@
       
    }
 
-   .projectTitle{
+   .capition{
       color:  rgb(67, 152, 47);
       
     }
@@ -513,7 +513,7 @@
       }
       .wrap .container .content 
       {
-        margin: 0 100px;
+        margin: 0 120px 0 90px;
       }
       .imgBox
       {
@@ -544,7 +544,7 @@
       
         width: 495px;
         padding-left: 35px;
-        text-align: center;
+        /* text-align: center; */
       }
       
       /* _________footer_________ */
@@ -574,21 +574,26 @@
     }
 
 
-    @media(max-width:574px){
+    @media(max-width:574px)
+    {
 
-       .imgBox
-      {
-        padding-left: 0 0px;
-        
-      }
+  
       
       .wrap .container .content{
-        margin: 0;
-        padding: 0 145px 0 145px;
+        
+        padding: 0 15px 0 50px;
       }
 
       .intro-wrap{
         padding: 0 35px 0 35px;
+      }
+
+      .intro-wrap .about{
+        padding: 0 1em ;
+      }
+
+      .aboutWrap{
+        padding: 0 55px 0 0;
       }
 
       .footer-col{
@@ -621,9 +626,29 @@
         padding: 0 1rem;
       }
 
+      /*______contact________*/
+      #overlay{
+        max-width: 350px;
+        padding: 0 2px;
+        margin: 0 auto;
+      }
+      .contactContent p {
+        width: 365px;
+        padding: 0px 45px 10px 0px;
+      }
+      .contactWrap{
+        max-width: 370px;
+      }
+      
+      .btn{
+        min-width: 200px;
+      }
+
+      .contactWrap .card-container .contactContent{
+        max-width: 370px;
+        padding: 0 30px 0 25px;
+      }
     }
 
-    /* TEM QUE FAZER PRA HOME - intro-wrap  */
 
-    /* aboutWrap{
-      width: 95%; */
+   
