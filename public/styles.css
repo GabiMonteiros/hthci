@@ -92,9 +92,15 @@
       margin-bottom: 8px;
     }
 
-    #donateBtn button{
+    .donateBtn button{
       padding: 8px 15px 8px 15px ;
     }
+    
+    button :hover{
+      color: #e91e63;
+      
+    }    
+
     /* ____________________footer_____________________ */
 
     .footer-container{
@@ -398,6 +404,11 @@
         min-width: 400px; 
         
     }
+
+    .btn :hover{
+      color: #e91e63;
+      
+    }     
 
     button{
         background-color: rgb(75, 191, 75);
