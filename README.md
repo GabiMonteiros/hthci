@@ -24,6 +24,7 @@
 ##
 <h3 align="left">Showroom:</h3>
 
-https://github.com/GabiMonteiros/connectFour
+https://github.com/GabiMonteiros/hthci
+
 
 ![GIFDEMO!](hthciWebsite.gif)
