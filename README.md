@@ -15,6 +15,7 @@
   - Node.js
   - EJS
   - Express
+  - Responsive to mobile divices 
   
 </div>
 
