@@ -26,4 +26,4 @@
 
 https://github.com/GabiMonteiros/connectFour
 
-![GIFDEMO!](demoLarge.gif)
+![GIFDEMO!](hthciWebsite.gif)
