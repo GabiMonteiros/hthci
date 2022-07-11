@@ -27,4 +27,4 @@
 https://github.com/GabiMonteiros/hthci
 
 
-![hthciWebsite](https://user-images.githubusercontent.com/65348563/178218867-f8295b93-a486-4254-b36f-6edbc68bf4c4.gif)
+![hthci macGif](https://user-images.githubusercontent.com/65348563/178222673-39e56fb4-5137-4f05-a23a-07523ddb1051.gif)
