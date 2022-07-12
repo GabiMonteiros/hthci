@@ -129,8 +129,8 @@
     }
 
     .footer-col{
-       width: 25%;
-       padding: 0 40px;
+      
+      padding: 0 55px;
     }
 
     .footer-col h4 {
@@ -139,7 +139,7 @@
       margin-bottom: 15px;
       font-weight: 500;
       position: relative;
-      transition: all 0.3s ease;
+      transition: all 0.1s ease;
     }
 
     .footer-col h4 a:hover{
@@ -316,7 +316,8 @@
 
 
     .aboutImg{
-      width: 82%;
+      min-width: 100%;
+      padding-left: 130px;
     }
 
 
@@ -569,10 +570,13 @@
           
         
       }
+      
+       
       .footerBottom{
-        padding: 100px 50px 0 0  
-
+        padding-top: 160px;
       }
+
+      
       .footer-row{
         align-items: center;
         align-content: center;
@@ -621,15 +625,16 @@
       }
       .footerStyle{
         padding: 0 auto;
-        height: 550px;
+        height: 600px;
       }
       .footer-row .footer-col{
         flex-direction: column;
         max-width: 350px;
       }
 
-      .footerBottom{
-        padding-top: 255px
+      .footerBottom {
+        padding: 305px 50px 0 0  
+
       }
       
       .footerBottom p{
